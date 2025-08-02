@@ -10,7 +10,7 @@ export const EmojiRating = ({ rate }: Props) => {
     const rateInt = Math.floor(rate);
 
     const stars = '⭐​'.repeat(rateInt) + '☆'.repeat(5 - rateInt)
-    const felling = ['😢 que bad meu irmão', '🙁 meio pra baixo', '😐 mais ou menos', '🙂 bom, tudo da pode melhorar..', '🥰 coisa boa']
+    const felling = ['eita', '😢 que bad meu irmão', '🙁 meio pra baixo', '😐 mais ou menos', '🙂 bom, tudo da pode melhorar..', '🥰 coisa boa']
 
 
     return (

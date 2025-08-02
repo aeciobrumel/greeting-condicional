@@ -17,14 +17,14 @@ const Page = () => {
             <div className="text-6xl font-bold">
                 {hour >= 0 && hour < 12 && 'Bom dia! 😀'}
                 {hour >= 12 && hour < 18 && 'Boa tarde! 😀'}
-                {hour >= 18 && hour < 23 && 'Boa noite! 😀'}
+                {hour >= 18 && hour < 24 && 'Boa noite! 😀'}
             </div>
 
             {rate === null ? (
                 <div className="flex flex-col items-center mt-12 gap-6">
                     <div className="text-2xl font-medium">Como você se sente hoje?</div>
                     <div className="flex gap-4">
-                        {[0, 1, 2, 3, 4].map((value) => (
+                        {[0, 1, 2, 3, 4, 5].map((value) => (
                             <button
                                 key={value}
                                 onClick={() => setRate(value)}
